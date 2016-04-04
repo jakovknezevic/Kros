@@ -38,7 +38,10 @@
 
     }
 
-
+    if ($_POST['submit'] == true)
+    {
+        echo ('Radi!');
+    }
 
 
 
@@ -66,7 +69,7 @@
         //echo 'Spol: ' . htmlspecialchars($_POST["spol"]) . '<br><br>';
     }
 
-    */
+
 
     if ($_POST['spol'] == 'M')
     {
@@ -81,7 +84,7 @@
         echo ('Što ste vi!?');
     }
 
-    /*
+
     if ($_POST['ime'] and $_POST['prezime'] == '')
     {
         echo ('Niste unesli ime i prezime!' . '<br>');
