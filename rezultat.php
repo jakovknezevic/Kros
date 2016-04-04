@@ -19,7 +19,7 @@
     //    $result->close();
     //}
 
-
+    /*
     $conn->query("INSERT INTO students (name, surname) VALUES ('" . $_POST['ime'] ."','" . $_POST['prezime'] . "');");
 
     $result = $conn->query("SELECT * FROM students ORDER BY surname");
@@ -37,10 +37,10 @@
         $conn->next_result();
 
     }
-
+    */
     if ($_POST['submit'] == true)
     {
-        echo ('Radi!');
+        $conn->query("INSERT INTO students (name, surname) VALUES ('" . $_POST['ime'] ."','" . $_POST['prezime'] . "');");
     }
 
 
