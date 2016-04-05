@@ -3,12 +3,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <!--
     <link rel="stylesheet" type="text/css" href="forma.css">
-    <title>Forme</title>
+    -->
+    <title>Kros</title>
 </head>
 
 <body>
-<h1>Forme</h1>
+<h1>Kros</h1>
 
 <p>
     <?php
@@ -20,7 +22,7 @@
     //}
 
     /*
-    $conn->query("INSERT INTO students (name, surname) VALUES ('" . $_POST['ime'] ."','" . $_POST['prezime'] . "');");
+    $conn->query("INSERT INTO ucenici (Id_Bar, Kat_Id, Ime, Prezime) VALUES ('" . $_POST['Id_Bar'] ."','" . $_POST['Kat_Id'] ."','" . $_POST['Ime'] ."','" . $_POST['Prezime'] ."');");
 
     $result = $conn->query("SELECT * FROM students ORDER BY surname");
     if($result)
@@ -40,69 +42,9 @@
     */
     if ($_POST['submit'] == true)
     {
-        $conn->query("INSERT INTO students (name, surname) VALUES ('" . $_POST['ime'] ."','" . $_POST['prezime'] . "');");
+        $conn->query("INSERT INTO ucenici (Id_Bar, Kat_Id, Ime, Prezime) VALUES ('" . $_POST['Id_Bar'] ."','" . $_POST['Kat_Id'] ."','" . $_POST['Ime'] ."','" . $_POST['Prezime'] ."');");
     }
 
-
-
-    //$conn->close();
-    /*
-
-    if ($_POST['spol'] == 'M')
-    {
-        echo '<p class="musko">' . 'Vaše ime je: ' . htmlspecialchars($_POST["ime"]) . '<br>';
-        echo 'Vaše prezime je: ' . htmlspecialchars($_POST["prezime"]) . '</p><br>';
-        //echo 'Spol: ' . htmlspecialchars($_POST["spol"]) . '<br><br>';
-    }
-
-    elseif ($_POST['spol'] == 'Ž')
-    {
-        echo '<p class="zensko">' . 'Vaše ime je: ' . htmlspecialchars($_POST["ime"]) . '<br>';
-        echo 'Vaše prezime je: ' . htmlspecialchars($_POST["prezime"]) . '</p><br>';
-        //echo 'Spol: ' . htmlspecialchars($_POST["spol"]) . '<br><br>';
-    }
-
-    elseif ($_POST['spol'] == 'JD')
-    {
-        echo '<p class="jd">' . 'Vaše ime je: ' . htmlspecialchars($_POST["ime"]) . '<br>';
-        echo 'Vaše prezime je: ' . htmlspecialchars($_POST["prezime"]) . '</p><br>';
-        //echo 'Spol: ' . htmlspecialchars($_POST["spol"]) . '<br><br>';
-    }
-
-
-
-    if ($_POST['spol'] == 'M')
-    {
-        echo ('Vi ste pravi muškarac!');
-    }
-    elseif ($_POST['spol'] == 'Ž')
-    {
-        echo ('Vi ste prava žena!');
-    }
-    elseif  ($_POST['spol'] == 'JD')
-    {
-        echo ('Što ste vi!?');
-    }
-
-
-    if ($_POST['ime'] and $_POST['prezime'] == '')
-    {
-        echo ('Niste unesli ime i prezime!' . '<br>');
-    }
-    elseif ($_POST['ime'] == '')
-    {
-        echo ('Niste unesli ime!' . '<br>');
-    }
-    elseif ($_POST['prezime'] == '')
-    {
-        echo('Niste unesli prezime!' . '<br>');
-    }
-    else
-    {
-        echo('');
-    }
-
-    */
 
     ?>
 

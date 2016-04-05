@@ -1,3 +1,4 @@
+<?php require('db.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,20 +15,35 @@
 <p>
 
 <form method="post" action="rezultat.php">
+    Bar Kod:<br>
+    <input name="Id_Bar" onmouseover="this.focus();" type="text">
+    <!--
+    <input type="number" name="Id_Bar" min="1" max="10">
+    -->
+    Kategorija:
+    <input type="number" name="Kat_Id" min="1" max="10" " "><br>
     Ime:<br>
-    <input type="text" name="ime"><br>
-    Prezime:<br>
-    <input type="text" name="prezime"><br>
-    Kategorija:<br>
-    <input type="number" name="kategorija" min="1" max="10">
+    <input type="text" name="Ime">
+    Prezime:
+    <input type="text" name="Prezime"><br>
+
 
     <!--
     <input type="radio" name="spol" value="M">Muško<br>
     <input type="radio" name="spol" value="Ž">Žensko<br>
-    <input type="radio" name="spol" value="JD">Nešto treće<br>
     -->
     <input type="submit" value="Submit">
+
 </form>
 </p>
+
+<?php
+if (!function_exists('mysqli_init') && !extension_loaded('mysqli')) {
+echo 'We don\'t have mysqli!!!';
+} else {
+echo 'Phew we have it!';
+}
+?>
+
 </body>
 </html>
