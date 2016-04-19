@@ -14,18 +14,12 @@
 
 <p>
 
-
-<form action="upis.php">
-    <input type="submit" value="Upis učenika"><br><br>
-</form>
-
-<form action="ocitavanje.php">
-    <input type="submit" value="Očitavanje barkod skenerom"><br><br>
-</form>
-
-<form action="unos_kat.php">
-    <input type="submit" value="Unos kategorija">
-</form>
+<form method="post" action="ocitavanje1.php">
+    Bar Kod:<br>
+    <input type="text" onmouseover="this.focus();" name="Bar">
+    <!--
+    <input type="number" name="Id_Bar" min="1" max="10">
+    -->
 
 
     <!--
@@ -34,7 +28,7 @@
     -->
 
 
-
+</form>
 </p>
 
 <?php
@@ -46,6 +40,8 @@ echo 'Phew we have it!';
 }
 */
 ?>
+
+<a href="index.php">Početak</a>
 
 </body>
 </html>

@@ -14,19 +14,14 @@
 
 <p>
 
+<form method="post" action="unos_kat1.php">
+    Broj Kategorije:
+    <input type="text" name="Id_Kat"><br><br>
 
-<form action="upis.php">
-    <input type="submit" value="Upis učenika"><br><br>
-</form>
+    Naziv kategorije:
+    <input type="text" name="Naziv">
 
-<form action="ocitavanje.php">
-    <input type="submit" value="Očitavanje barkod skenerom"><br><br>
-</form>
-
-<form action="unos_kat.php">
-    <input type="submit" value="Unos kategorija">
-</form>
-
+    <br><br><input type="submit" value="Submit">
 
     <!--
     <input type="radio" name="spol" value="M">Muško<br>
@@ -34,7 +29,7 @@
     -->
 
 
-
+</form>
 </p>
 
 <?php
@@ -46,6 +41,8 @@ echo 'Phew we have it!';
 }
 */
 ?>
+
+<a href="index.php">Početak</a>
 
 </body>
 </html>
