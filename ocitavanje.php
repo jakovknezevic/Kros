@@ -14,7 +14,7 @@
 
 <p>
 
-<form method="post" action="ocitavanje1.php">
+<form method="GET" action="ocitavanje1.php">
     Bar Kod:<br>
     <input type="text" onmouseover="this.focus();" name="Bar">
     <!--
@@ -27,21 +27,13 @@
     <input type="radio" name="spol" value="Ž">Žensko<br>
     -->
 
-
 </form>
 </p>
 
-<?php
-/*
-if (!function_exists('mysqli_init') && !extension_loaded('mysqli')) {
-echo 'We don\'t have mysqli!!!';
-} else {
-echo 'Phew we have it!';
-}
-*/
-?>
 
+<!--
 <a href="index.php">Početak</a>
+-->
 
 </body>
 </html>

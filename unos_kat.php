@@ -14,7 +14,7 @@
 
 <p>
 
-<form method="post" action="unos_kat1.php">
+<form method="GET" action="unos_kat1.php">
     Broj Kategorije:
     <input type="text" name="Id_Kat"><br><br>
 
@@ -32,15 +32,6 @@
 </form>
 </p>
 
-<?php
-/*
-if (!function_exists('mysqli_init') && !extension_loaded('mysqli')) {
-echo 'We don\'t have mysqli!!!';
-} else {
-echo 'Phew we have it!';
-}
-*/
-?>
 
 <a href="index.php">Početak</a>
 

@@ -20,14 +20,29 @@
     //    printf("Select returned $d rows.\n", $result->num_rows);
     //    $result->close();
     //}
-    $sql = "INSERT INTO ucenici (Id_Bar, Kat_Id, Ime, Prezime) VALUES ('" . $_POST['Id_Bar'] ."','" . $_POST['Kat_Id'] ."','" . $_POST['Ime'] ."','" . $_POST['Prezime'] ."')";
 
-    $conn->query($sql);
+    $sql = ("INSERT INTO ucenici (Kat_Id, Ime, Prezime) VALUES ('" . $_GET['Kat_Id'] ."','" . $_GET['Ime'] ."','" . $_GET['Prezime'] ."');");
 
+    $result = $conn->query($sql);
 
-    header("Location: upis.php");
+    //$sql = "INSERT INTO ucenici (Id_Bar, Kat_Id, Ime, Prezime) VALUES ('" . $_POST['Id_Bar'] ."','" . $_POST['Kat_Id'] ."','" . $_POST['Ime'] ."','" . $_POST['Prezime'] ."')";
+
+    //$conn->query($sql) or die (!mysqli_error());
+    /*
+    if($result)
+    {
+        echo "Success executing : $sql";
+    }
+    else
+    {
+        echo "Failed executing : $sql";
+    }
+    */
+
+    //header("Location: upis.php");
     ?>
 
+    
 
 
     <br>

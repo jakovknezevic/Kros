@@ -24,7 +24,15 @@
 </form>
 
 <form action="unos_kat.php">
-    <input type="submit" value="Unos kategorija">
+    <input type="submit" value="Unos kategorija"><br><br>
+</form>
+
+<form action="generator.php">
+    <input type="submit" value="Barkod generator"><br><br>
+</form>
+
+<form action="test.php">
+    <input type="submit" value="Test"><br><br>
 </form>
 
 
