@@ -24,7 +24,7 @@
     $sql = ("INSERT INTO ucenici (Kat_Id, Ime, Prezime) VALUES ('" . $_GET['Kat_Id'] ."','" . $_GET['Ime'] ."','" . $_GET['Prezime'] ."');");
 
     $result = $conn->query($sql);
-
+    echo($sql);
     //$sql = "INSERT INTO ucenici (Id_Bar, Kat_Id, Ime, Prezime) VALUES ('" . $_POST['Id_Bar'] ."','" . $_POST['Kat_Id'] ."','" . $_POST['Ime'] ."','" . $_POST['Prezime'] ."')";
 
     //$conn->query($sql) or die (!mysqli_error());
@@ -39,7 +39,7 @@
     }
     */
 
-    //header("Location: upis.php");
+    header("Location: upis.php");
     ?>
 
     
@@ -47,8 +47,9 @@
 
     <br>
     <br>
+    <!--
     <a href="index.php">Početak</a>
-
+    -->
 </p>
 </body>
 </html>

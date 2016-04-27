@@ -32,8 +32,12 @@
 </form>
 </p>
 
+<p>
+<form action="index.php">
+    <input type="submit" value="Početak"><br><br>
+</form>
 
-<a href="index.php">Početak</a>
+</p>
 
 </body>
 </html>

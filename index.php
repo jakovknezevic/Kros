@@ -27,14 +27,18 @@
     <input type="submit" value="Unos kategorija"><br><br>
 </form>
 
-<form action="generator.php">
+
+
+<form action="unos_barkod.php">
     <input type="submit" value="Barkod generator"><br><br>
 </form>
 
+<!--
 <form action="test.php">
     <input type="submit" value="Test"><br><br>
 </form>
 
+-->
 
     <!--
     <input type="radio" name="spol" value="M">Muško<br>

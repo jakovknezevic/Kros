@@ -12,35 +12,32 @@
 <body>
 <h1>Kros</h1>
 
-<p>
+<form method="GET" action="barkod_generator.php">
+    
+    <br>Ime:
+    <input type="text" name="Ime">
+    Prezime:
+    <input type="text" name="Prezime"><br>
 
-<form method="GET" action="ocitavanje1.php">
-    Bar Kod:<br>
-    <input type="text" onmouseover="this.focus();" name="Bar">
-    <!--
-    <input type="number" name="Id_Bar" min="1" max="10">
-    -->
-
+    <br><input type="submit" value="Submit">
 
     <!--
     <input type="radio" name="spol" value="M">Muško<br>
     <input type="radio" name="spol" value="Ž">Žensko<br>
     -->
 
+
 </form>
 </p>
 
+
+
 <p>
-    <form action="index.php">
-        <input type="submit" value="Početak"><br><br>
-    </form>
+<form action="index.php">
+    <input type="submit" value="Početak"><br><br>
+</form>
 
 </p>
-
-
-<!--
-<a href="index.php">Početak</a>
--->
 
 </body>
 </html>

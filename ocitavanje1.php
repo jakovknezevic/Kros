@@ -54,6 +54,12 @@
     $conn->close();
     ?>
 
+    <?php
+
+    //echo($sql);
+
+    ?>
+
 
     <br>
     <br>
