@@ -1,3 +1,4 @@
+<?php require('check.php'); ?>
 <?php require('db.php'); ?>
 <!DOCTYPE html>
 <html>
@@ -10,6 +11,11 @@
 </head>
 
 <body>
+
+<form action="logout.php">
+    <input type="submit" value="Logout"><br><br>
+</form>
+
 <h1>Kros</h1>
 
 <p>
@@ -27,7 +33,13 @@
     <input type="submit" value="Unos kategorija"><br><br>
 </form>
 
+<form action="unos_skola.php">
+    <input type="submit" value="Unos Škole"><br><br>
+</form>
 
+<form action="unos_nastavnika.php">
+    <input type="submit" value="Unos Nastavnika"><br><br>
+</form>
 
 <form action="unos_barkod.php">
     <input type="submit" value="Barkod generator"><br><br>

@@ -1,3 +1,4 @@
+<?php require('check.php'); ?>
 <?php require('db.php'); ?>
 <!DOCTYPE html>
 <html>
@@ -10,6 +11,11 @@
 </head>
 
 <body>
+
+<form action="logout.php">
+    <input type="submit" value="Logout"><br><br>
+</form>
+
 <h1>Kros</h1>
 
 <p>
@@ -23,9 +29,13 @@
     <input type="text" name="Id_Bar">
 -->
     Kategorija:
-    <input type="text" name="Kat_Id"><br><br>
+    <input type="number" name="KatId"><br><br>
+    Id Skole:
+    <input type="number" name="SkoleId"><br><br>
+    Razred:
+    <input type="text" name="Razred"><br><br>
     Ime:
-    <input type="text" name="Ime">
+    <input type="text" name="Ime"><br><br>
     Prezime:
     <input type="text" name="Prezime"><br>
 

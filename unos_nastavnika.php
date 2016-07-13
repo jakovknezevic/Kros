@@ -20,14 +20,24 @@
 
 <p>
 
-<form method="GET" action="unos_kat1.php">
-    Broj Kategorije:
-    <input type="text" name="Id_Kat"><br><br>
+<form method="GET" action="unos_nastavnika1.php">
+    <!--
+    Bar Kod:<br>
 
-    Naziv kategorije:
-    <input type="text" name="Naziv">
+    <input name="Id_Bar" onmouseover="this.focus();" type="text">
 
-    <br><br><input type="submit" value="Submit">
+    <input type="text" name="Id_Bar">
+-->
+    Ime:
+    <input type="text" name="ime"><br><br>
+    Prezime:
+    <input type="text" name="prezime"><br><br>
+    Username:
+    <input type="text" name="username"><br><br>
+    Password:
+    <input type="text" name="password"><br>
+
+    <br><input type="submit" value="Submit">
 
     <!--
     <input type="radio" name="spol" value="M">Muško<br>
@@ -37,6 +47,8 @@
 
 </form>
 </p>
+
+
 
 <p>
 <form action="index.php">

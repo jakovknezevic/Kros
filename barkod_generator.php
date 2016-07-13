@@ -1,3 +1,4 @@
+<?php require('check.php'); ?>
 <?php require('db.php'); ?>
 <?php require('generator.php'); ?>
 
@@ -21,7 +22,8 @@ if ($result->num_rows > 0) {
     }
     echo('</table>');
 } else {
-    echo "Nema Id-a";
+    echo "Učenik ne postoji u bazi, provjerite jeste li ispravno unijeli podatke!<br>";
+    echo "Kliknite na strelicu gore da biste otišli korak nazad.";
 }
 $conn->close();
 

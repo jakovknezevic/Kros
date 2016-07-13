@@ -22,7 +22,7 @@
     //    $result->close();
     //}
 
-    $sql = ("INSERT INTO ucenici (Kat_Id, Skole_Id, Razred, Ime, Prezime) VALUES ('" . $_GET['KatId'] ."','" . $_GET['SkoleId'] . "','" . $_GET['Razred'] ."','" . $_GET['Ime'] ."','" . $_GET['Prezime'] ."');");
+    $sql = ("INSERT INTO nastavnici (Ime, Prezime, Username, Password) VALUES ('" . $_GET['ime'] ."','" . $_GET['prezime'] . "','" . $_GET['username'] ."','" . $_GET['password'] ."');");
 
     $result = $conn->query($sql);
     echo($sql);
@@ -40,7 +40,7 @@
     }
     */
 
-    header("Location: upis.php");
+    header("Location: unos_nastavnika.php");
     ?>
 
     

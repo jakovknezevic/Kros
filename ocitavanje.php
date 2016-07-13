@@ -1,3 +1,4 @@
+<?php require('check.php'); ?>
 <?php require('db.php'); ?>
 <!DOCTYPE html>
 <html>
@@ -10,6 +11,10 @@
 </head>
 
 <body>
+<form action="logout.php">
+    <input type="submit" value="Logout"><br><br>
+</form>
+
 <h1>Kros</h1>
 
 <p>
