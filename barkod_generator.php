@@ -1,10 +1,56 @@
 <?php require('check.php'); ?>
 <?php require('db.php'); ?>
 <?php require('generator.php'); ?>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kros</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/template.css" rel="stylesheet">
+    <![endif]-->
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top hovershadow">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="logout.php">Odjava</a>
+            <a class="navbar-brand" href="index.php">Početna</a>
+            <ul class="nav navbar-nav">
+                <li class="active1"><a href="barkod_generator.php">Barkod Generator</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="starter-template">
+        <h1>Unos učenika</h1>
+        <p class="lead"></p>
+    </div>
+
+    <div class="font resize">
+
 
 <?php
 
-$sql = "SELECT Id FROM ucenici WHERE Ime='" . $_GET['Ime'] ."' AND Prezime='". $_GET['Prezime'] ."'";
+$sql = "SELECT Id, Ime, Prezime FROM ucenici WHERE Ime='" . $_GET['Ime'] ."' AND Prezime='". $_GET['Prezime'] ."'";
 $result = $conn->query($sql);
 //$ime = mysqli_real_escape_string($_POST['email']);
 //echo($sql);
@@ -16,6 +62,8 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
 
         echo('<td>' . $row['Id'] . '</td>');
+        echo('<td>' . $row['Ime'] . '</td>');
+        echo('<td>' . $row['Prezime'] . '</td>');
         generate_barcode($row['Id']);
         echo('</tr>');
 
@@ -37,3 +85,8 @@ $conn->close();
 //$seatnumber = $row['seatnumber'];
 
 ?>
+
+
+    </div>
+
+</div><!-- /.container
