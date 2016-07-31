@@ -32,7 +32,7 @@
             <a class="navbar-brand" href="logout.php">Odjava</a>
             <a class="navbar-brand" href="index.php">Početna</a>
             <ul class="nav navbar-nav">
-                <li class="active1"><a href="barkod_generator.php">Barkod Generator</a></li>
+                <li class="active1"><a href="unos_barkod.php">Barkod Generator</a></li>
             </ul>
         </div>
     </div>
@@ -57,25 +57,24 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
-    echo('<table>');
+    //echo('<table>');
 
     while($row = $result->fetch_assoc()) {
 
-        echo('<td>' . $row['Id'] . '</td>');
-        echo('<td>' . $row['Ime'] . '</td>');
+        //echo('<tr>');
+        echo('<td>' . $row['Id'] . ' ' . '</td>');
+        echo('<td>' . $row['Ime'] . ' ' . '</td>');
         echo('<td>' . $row['Prezime'] . '</td>');
         generate_barcode($row['Id']);
-        echo('</tr>');
+        //echo('</tr>');
 
     }
-    echo('</table>');
+    //echo('</table>');
 } else {
     echo "Učenik ne postoji u bazi, provjerite jeste li ispravno unijeli podatke!<br>";
     echo "Kliknite na strelicu gore da biste otišli korak nazad.";
 }
 $conn->close();
-
-
 
 
 
@@ -85,6 +84,9 @@ $conn->close();
 //$seatnumber = $row['seatnumber'];
 
 ?>
+
+
+
 
 
     </div>

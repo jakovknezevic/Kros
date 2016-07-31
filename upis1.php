@@ -22,7 +22,7 @@
     //    $result->close();
     //}
 
-    $sql = ("INSERT INTO ucenici (Kat_Id, Skole_Id, Razred, Ime, Prezime) VALUES ('" . $_GET['KatId'] ."','" . $_GET['SkoleId'] . "','" . $_GET['Razred'] ."','" . $_GET['Ime'] ."','" . $_GET['Prezime'] ."');");
+    $sql = ("INSERT IGNORE INTO ucenici (Kat_Id, Skole_Id, Razred, Ime, Prezime) VALUES ('" . $_GET['KatId'] ."','" . $_GET['SkoleId'] . "','" . $_GET['Razred'] ."','" . $_GET['Ime'] ."','" . $_GET['Prezime'] ."');");
 
     $result = $conn->query($sql);
     echo($sql);

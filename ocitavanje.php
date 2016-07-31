@@ -62,16 +62,16 @@
         </form>
         </p>
 
-        <!--
+        
 
         <p>
-        <form action="index.php">
-            <input type="submit" class="button button1" value="Početak"><br><br>
+        <form action="ispis.php">
+            <input type="submit" class="button button1" value="Ispis"><br><br>
         </form>
 
         </p>
 
-        -->
+
 
     </div>
 

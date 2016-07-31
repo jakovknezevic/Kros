@@ -31,7 +31,7 @@
             <a class="navbar-brand" href="logout.php">Odjava</a>
             <a class="navbar-brand" href="index.php">Početna</a>
             <ul class="nav navbar-nav">
-                <li class="active1"><a href="upis.php">Unos učenika</a></li>
+                <li class="active1"><a href="unos_barkod.php">Barkod Generator</a></li>
             </ul>
         </div>
     </div>
@@ -63,6 +63,7 @@
 
         </form>
         </p>
+        
     </div>
 
 </div>

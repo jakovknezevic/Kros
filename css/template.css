@@ -123,3 +123,51 @@ img.resize{
     
     float: right;
 }
+
+.tab {
+    max-width: 960px;
+    margin: 10px auto;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------
+    Table css  */
+
+table {
+    border:none;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+table td:first-child {
+    border-left: none;
+}
+
+table td:last-child {
+    border-right: none;
+}
+
+table th:first-child {
+    border-left: none;
+}
+
+table th:last-child {
+    border-right: none;
+}
+
+tr {
+    background-color: #f2f2f2
+}
+
+th {
+    background-color: antiquewhite;
+    color: black;
+}
