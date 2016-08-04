@@ -41,7 +41,7 @@
 <div class="container">
 
     <div class="starter-template">
-        <h1>Unos učenika</h1>
+
         <p class="lead"></p>
     </div>
 
@@ -61,13 +61,21 @@ if ($result->num_rows > 0) {
 
     while($row = $result->fetch_assoc()) {
 
-        //echo('<tr>');
+        echo('<tr>');
         echo('<td>' . $row['Id'] . ' ' . '</td>');
         echo('<td>' . $row['Ime'] . ' ' . '</td>');
         echo('<td>' . $row['Prezime'] . '</td>');
         generate_barcode($row['Id']);
-        //echo('</tr>');
+        echo('</tr>');
 
+/*
+        echo('<tr>');
+        echo($row['Id']);
+        echo($row['Ime']);
+        echo($row['Prezime']);
+        generate_barcode($row['Id']);
+        echo('</tr>');
+*/
     }
     //echo('</table>');
 } else {
@@ -85,7 +93,19 @@ $conn->close();
 
 ?>
 
+        <body>
 
+
+        <button onclick="myFunction()" class="login hovershadow print-button no-print">Print</button>
+
+        <script>
+
+            function myFunction() {
+                window.print();
+            }
+        </script>
+
+        </body>
 
 
 

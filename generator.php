@@ -4,14 +4,16 @@ include('src/BarcodeGenerator.php');
 include('src/BarcodeGeneratorHTML.php');
 include('src/BarcodeGeneratorPNG.php');
 include('src/BarcodeGeneratorSVG.php');
+include('src/BarcodeGeneratorJPG.php');
 
 function generate_barcode($id)
 {
     $generatorPNG = new Picqer\Barcode\BarcodeGeneratorPNG();
-    //$generatorSVG = new Picqer\Barcode\BarcodeGeneratorSVG();
+    $generatorSVG = new Picqer\Barcode\BarcodeGeneratorSVG();
     $generatorHTML = new Picqer\Barcode\BarcodeGeneratorHTML();
+    $generatorJPG = new Picqer\Barcode\BarcodeGeneratorJPG();
 
-    echo $generatorHTML->getBarcode($id, $generatorPNG::TYPE_CODE_128);
+    echo $generatorSVG->getBarcode($id, $generatorPNG::TYPE_CODE_128);
 }
 
 

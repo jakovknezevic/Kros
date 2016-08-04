@@ -32,6 +32,22 @@ body {
 }
 
 
+.print-button {
+    position:absolute;
+    top:15%;
+    left:90%;
+
+}
+
+@media print
+{
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+
+
 .ocitavanje {
     background-color: navajowhite;
     border-style: solid;
