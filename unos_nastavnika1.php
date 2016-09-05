@@ -21,6 +21,7 @@
     //    printf("Select returned $d rows.\n", $result->num_rows);
     //    $result->close();
     //}
+    
 
     $sql = ("INSERT INTO nastavnici (Ime, Prezime, Username, Password) VALUES ('" . $_GET['ime'] ."','" . $_GET['prezime'] . "','" . $_GET['username'] ."','" . $_GET['password'] ."');");
 

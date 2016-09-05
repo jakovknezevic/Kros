@@ -4,6 +4,7 @@ namespace Picqer\Barcode;
 
 class BarcodeGeneratorPNG extends BarcodeGenerator
 {
+    
 
     /**
      * Return a PNG image representation of barcode (requires GD or Imagick library).

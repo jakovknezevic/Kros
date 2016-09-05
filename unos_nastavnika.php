@@ -12,6 +12,7 @@
 
 <body>
 
+
 <form action="logout.php">
     <input type="submit" value="Logout"><br><br>
 </form>

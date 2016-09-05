@@ -21,6 +21,7 @@
     //    printf("Select returned $d rows.\n", $result->num_rows);
     //    $result->close();
     //}
+    
 
     $sql = ("INSERT IGNORE INTO ucenici (Kat_Id, Skole_Id, Razred, Ime, Prezime) VALUES ('" . $_GET['KatId'] ."','" . $_GET['SkoleId'] . "','" . $_GET['Razred'] ."','" . $_GET['Ime'] ."','" . $_GET['Prezime'] ."');");
 

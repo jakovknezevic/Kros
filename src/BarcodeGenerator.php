@@ -7,6 +7,7 @@
  * Based on TCPDF Barcode Generator
  */
 
+
 // Copyright (C) 2002-2015 Nicola Asuni - Tecnick.com LTD
 //
 // This file is part of TCPDF software library.
@@ -31,6 +32,7 @@ namespace Picqer\Barcode;
 
 abstract class BarcodeGenerator
 {
+
     const TYPE_CODE_39 = 'C39';
     const TYPE_CODE_39_CHECKSUM = 'C39+';
     const TYPE_CODE_39E = 'C39E';

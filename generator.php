@@ -17,6 +17,8 @@ function generate_barcode($id)
 }
 
 
+
+
 //echo $generatorSVG->getBarcode('081231723897', $generatorPNG::TYPE_EAN_13);
 //echo '<img src="data:image/png;base64,' . base64_encode($generatorPNG->getBarcode('081231723897', $generatorPNG::TYPE_CODE_128)) . '">';
 

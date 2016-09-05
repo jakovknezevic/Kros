@@ -4,6 +4,7 @@ namespace Picqer\Barcode;
 
 class BarcodeGeneratorSVG extends BarcodeGenerator
 {
+    
 
     /**
      * Return a SVG string representation of barcode.

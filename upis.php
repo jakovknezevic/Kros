@@ -49,6 +49,7 @@
 
         <form method="GET" class="font" action="upis1.php">
             <!--
+            
             Bar Kod:<br>
 
             <input name="Id_Bar" onmouseover="this.focus();" type="text">

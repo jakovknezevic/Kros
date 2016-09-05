@@ -47,6 +47,7 @@
     <div>
         <p>
 
+        
         <form method="GET" action="ocitavanje1.php">
             <input type="text" class="hovershadow ocitavanje" autocomplete="off" onmouseover="this.focus();" name="Bar">
             <!--
