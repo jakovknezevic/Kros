@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 31, 2016 at 10:14 AM
+-- Generation Time: Sep 05, 2016 at 06:44 PM
 -- Server version: 5.7.9
 -- PHP Version: 5.6.16
 
@@ -19,6 +19,28 @@ SET time_zone = "+00:00";
 --
 -- Database: `kros`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gradovi`
+--
+
+DROP TABLE IF EXISTS `gradovi`;
+CREATE TABLE IF NOT EXISTS `gradovi` (
+  `Id_Grad` int(11) NOT NULL AUTO_INCREMENT,
+  `Naziv_Grada` varchar(50) NOT NULL,
+  PRIMARY KEY (`Id_Grad`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `gradovi`
+--
+
+INSERT INTO `gradovi` (`Id_Grad`, `Naziv_Grada`) VALUES
+(1, 'Daruvar'),
+(2, 'Osijek'),
+(3, 'Virovitica');
 
 -- --------------------------------------------------------
 
@@ -53,17 +75,42 @@ INSERT INTO `ispis` (`Id`, `Ime`, `Prezime`) VALUES
 
 DROP TABLE IF EXISTS `kategorije`;
 CREATE TABLE IF NOT EXISTS `kategorije` (
-  `Id_Kat` int(11) NOT NULL,
-  `Naziv_Kategorije` varchar(60) NOT NULL,
+  `Id_Kat` int(11) NOT NULL AUTO_INCREMENT,
+  `Naziv_Kategorije` varchar(60) COLLATE utf8_croatian_ci NOT NULL,
   PRIMARY KEY (`Id_Kat`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8 COLLATE=utf8_croatian_ci;
 
 --
 -- Dumping data for table `kategorije`
 --
 
 INSERT INTO `kategorije` (`Id_Kat`, `Naziv_Kategorije`) VALUES
-(2, '100m');
+(1, 'predškolski uzrast - djevojčice 100m'),
+(2, 'predškolski uzrast - dječaci 100m'),
+(3, 'osobe s posebnim s najvećim oštećenjima -djevojčice - 60m'),
+(4, 'osobe s posebnim s najvećim oštećenjima -dječaci -60m'),
+(5, 'osobe  posebnim potrebama  -djevočice -200m'),
+(6, 'osobe  posebnim potrebama  -dječaci -200m'),
+(7, '400m 1.razred OŠ, UČENICE'),
+(8, '400m 2.razred OŠ, UČENICE'),
+(9, '400m 1.razred OŠ, UČENICI'),
+(10, '400m 2.razred OŠ, UČENICI'),
+(11, '500m 3.razred OŠ, UČENICE'),
+(12, '500m 4.razred OŠ, UČENICE'),
+(13, '600m 3.razred OŠ, UČENICI'),
+(14, '600m 4.razred OŠ, UČENICI'),
+(15, '600m 5.razred OŠ, UČENICE'),
+(16, '600m 6.razred OŠ, UČENICE'),
+(17, '800m 5.razred OŠ, UČENICI'),
+(18, '800m 6.razred OŠ, UČENICI'),
+(19, '800m 7.razred OŠ, UČENICE'),
+(20, '800m 8.razred OŠ, UČENICE'),
+(21, '1000m 7.razred OŠ, UČENICI'),
+(22, '1000m 8.razred OŠ, UČENICI'),
+(23, '1000m 1.i 2. razred SŠ , UČENICE'),
+(24, '1200m 1.i 2. razred SŠ, UČENICI'),
+(25, '1200m 3.i 4. razred SŠ, UČENICE'),
+(26, '1800m 3.i 4. razred SŠ, UČENICI');
 
 -- --------------------------------------------------------
 
@@ -82,7 +129,7 @@ CREATE TABLE IF NOT EXISTS `nastavnici` (
   PRIMARY KEY (`Id`),
   UNIQUE KEY `Username` (`Username`),
   UNIQUE KEY `Password` (`Password`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `nastavnici`
@@ -100,17 +147,29 @@ INSERT INTO `nastavnici` (`Id`, `Ses_Id`, `Ime`, `Prezime`, `Username`, `Passwor
 DROP TABLE IF EXISTS `skole`;
 CREATE TABLE IF NOT EXISTS `skole` (
   `Id_Skole` int(11) NOT NULL AUTO_INCREMENT,
-  `Naziv` varchar(100) NOT NULL,
+  `Naziv` varchar(100) COLLATE utf8_croatian_ci NOT NULL,
   PRIMARY KEY (`Id_Skole`),
   UNIQUE KEY `Naziv` (`Naziv`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_croatian_ci;
 
 --
 -- Dumping data for table `skole`
 --
 
 INSERT INTO `skole` (`Id_Skole`, `Naziv`) VALUES
-(1, 'TehniÄka Å kola Daruvar');
+(10, 'ČDV "F.Mravenca"'),
+(13, 'ČDV Končanica'),
+(11, 'DV "V.Nazor"'),
+(9, 'DV Hercegovac'),
+(12, 'DV Sirač'),
+(1, 'Ekonomska BJELOVAR'),
+(2, 'GAREŠNICA'),
+(3, 'Gimnazija DARUVAR'),
+(4, 'GRUBIŠNO POLJE'),
+(5, 'Komercijalna BJELOVAR'),
+(6, 'POŽEGA'),
+(7, 'SŠ DARUVAR'),
+(8, 'Tehnička Škola Daruvar');
 
 -- --------------------------------------------------------
 
