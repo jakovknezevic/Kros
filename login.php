@@ -43,7 +43,7 @@
 
     <div>
         <p>
-        <form action="login_check.php" class="font" method="post">
+        <form style="text-align:center" action="login_check.php" class="font" method="post">
             Korisnicko ime:<br>
             <input type="text" class="textbox hovershadow" autocomplete="off" name="username"><br>
             Lozinka:<br>
@@ -59,24 +59,3 @@
     </div>
 
 </div><!-- /.container
-</body>
-</html>
-
-
-
-
-
-<html>
-<head>
-    <title>Prijava</title>
-</head>
-
-<body>
-<h1>
-    Prijava
-</h1>
-
-
-
-</body>
-</html>

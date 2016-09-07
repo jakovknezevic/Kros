@@ -15,6 +15,7 @@
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/template.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <![endif]-->
 </head>
 
@@ -46,7 +47,7 @@
         <p class="lead"></p>
     </div>
 
-    <div class="font resize">
+    <div class="font resize border1">
 
 
 <?php

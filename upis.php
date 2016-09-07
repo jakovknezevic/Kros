@@ -13,6 +13,7 @@
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/template.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <![endif]-->
 </head>
 
@@ -47,15 +48,12 @@
     <div>
         <p>
 
-        <form method="GET" class="font" action="upis1.php">
-            <!--
-            
-            Bar Kod:<br>
 
-            <input name="Id_Bar" onmouseover="this.focus();" type="text">
 
-            <input type="text" name="Id_Bar">
-        -->
+        <form method="GET" class="font spacing center" action="upis1.php">
+
+            <strong>Prva Forma</strong><br><br>
+
             Kategorija:
             <input type="number" class="textbox hovershadow" autocomplete="off" name="KatId"><br><br>
             Id Skole:
@@ -67,15 +65,28 @@
             Prezime:
             <input type="text" class="textbox hovershadow" autocomplete="off" name="Prezime"><br>
 
-            <br><input type="submit" class="login hovershadow" value="Submit">
+            <br><br><br>
 
-            <!--
-            <input type="radio" name="spol" value="M">Muško<br>
-            <input type="radio" name="spol" value="Ž">Žensko<br>
-            -->
+            <br><input type="submit" class="login hovershadow center1" value="Submit"><br><br>
+            
+            <strong>Druga Forma</strong><br><br>
+
+
+            Kategorija:
+            <input type="number" class="textbox hovershadow" autocomplete="off" name="KatId1"><br><br>
+            Id Skole:
+            <input type="number" class="textbox hovershadow" autocomplete="off" name="SkoleId1"><br><br>
+            Razred:
+            <input type="text" class="textbox hovershadow" autocomplete="off" name="Razred1"><br><br>
+            Ime:
+            <input type="text" class="textbox hovershadow" autocomplete="off" name="Ime1"><br><br>
+            Prezime:
+            <input type="text" class="textbox hovershadow" autocomplete="off" name="Prezime1"><br>
+
 
 
         </form>
+        
         </p>
 
     </div>
@@ -83,15 +94,3 @@
 </div><!-- /.container
 
 
-
-
-
-<html>
-<head>
-    <meta charset="UTF-8">
-    <!--
-    <link rel="stylesheet" type="text/css" href="forma.css">
-    -->
-
-</body>
-</html>

@@ -16,30 +16,16 @@
 <p>
     <?php
 
-    //if ($result = $conn->query("SELECT * FROM students"))
-    //{
-    //    printf("Select returned $d rows.\n", $result->num_rows);
-    //    $result->close();
-    //}
-    
 
     $sql = ("INSERT IGNORE INTO ucenici (Kat_Id, Skole_Id, Razred, Ime, Prezime) VALUES ('" . $_GET['KatId'] ."','" . $_GET['SkoleId'] . "','" . $_GET['Razred'] ."','" . $_GET['Ime'] ."','" . $_GET['Prezime'] ."');");
-
     $result = $conn->query($sql);
-    echo($sql);
-    //$sql = "INSERT INTO ucenici (Id_Bar, Kat_Id, Ime, Prezime) VALUES ('" . $_POST['Id_Bar'] ."','" . $_POST['Kat_Id'] ."','" . $_POST['Ime'] ."','" . $_POST['Prezime'] ."')";
 
-    //$conn->query($sql) or die (!mysqli_error());
-    /*
-    if($result)
-    {
-        echo "Success executing : $sql";
-    }
-    else
-    {
-        echo "Failed executing : $sql";
-    }
-    */
+
+    $sql1 = ("INSERT IGNORE INTO ucenici (Kat_Id, Skole_Id, Razred, Ime, Prezime) VALUES ('" . $_GET['KatId1'] ."','" . $_GET['SkoleId1'] . "','" . $_GET['Razred1'] ."','" . $_GET['Ime1'] ."','" . $_GET['Prezime1'] ."');");
+    $result1 = $conn->query($sql1);
+    echo($sql);
+    echo($sql1);
+
 
     header("Location: upis.php");
     ?>
@@ -49,9 +35,7 @@
 
     <br>
     <br>
-    <!--
-    <a href="index.php">Početak</a>
-    -->
+
 </p>
 </body>
 </html>

@@ -46,52 +46,35 @@
 
     <div>
 
-        <!--
 
-        <form action="logout.php">
-            <input type="submit" class="button" value="Logout"><br><br>
-        </form>
-
-        -->
 
         <p>
 
 
-        <form action="upis.php">
+        <form style="text-align:center" action="upis.php">
             <input type="submit" class="button hovershadow fixed1" value="Upis učenika"><br><br>
         </form>
 
-        <form action="ocitavanje.php">
+        <form style="text-align:center" action="ocitavanje.php">
             <input type="submit" class="button hovershadow" value="Očitavanje barkod skenerom"><br><br>
         </form>
 
-        <form action="unos_kat.php">
+        <form style="text-align:center" action="unos_kat.php">
             <input type="submit" class="button hovershadow" value="Unos kategorija"><br><br>
         </form>
 
-        <form action="unos_skola.php">
+        <form style="text-align:center" action="unos_skola.php">
             <input type="submit" class="button hovershadow" value="Unos Škole"><br><br>
         </form>
 
-        <form action="unos_nastavnika.php">
+        <form style="text-align:center" action="unos_nastavnika.php">
             <input type="submit" class="button hovershadow" value="Unos Nastavnika"><br><br>
         </form>
 
-        <form action="unos_barkod.php">
+        <form style="text-align:center" action="unos_barkod.php">
             <input type="submit" class="button hovershadow" value="Barkod generator"><br><br>
         </form>
 
-        <!--
-        <form action="test.php">
-            <input type="submit" value="Test"><br><br>
-        </form>
-
-        -->
-
-        <!--
-        <input type="radio" name="spol" value="M">Muško<br>
-        <input type="radio" name="spol" value="Ž">Žensko<br>
-        -->
 
 
 
@@ -99,32 +82,3 @@
     </div>
 
 </div><!-- /.container
-
-
-
-
-<html>
-<head>
-    <meta charset="UTF-8">
-    <!--
-    <link rel="stylesheet" type="text/css" href="forma.css">
-    -->
-
-</head>
-
-<body>
-
-
-
-<?php
-/*
-if (!function_exists('mysqli_init') && !extension_loaded('mysqli')) {
-echo 'We don\'t have mysqli!!!';
-} else {
-echo 'Phew we have it!';
-}
-*/
-?>
-
-</body>
-</html>
