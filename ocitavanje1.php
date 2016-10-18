@@ -49,24 +49,6 @@
 
 
 <p>
-    <?php
-    /*
-    $sql = ("SELECT Kat_Id, Ime, Prezime FROM ucenici WHERE Id_Bar=7622210471871");
-
-    $result = $conn->query($sql);
-
-    if($result)
-    {
-        echo "Success executing : $sql";
-    }
-    else
-    {
-        echo "Failed executing : $sql";
-    }
-
-    */
-    //header("Location: ocitavanje.php");
-    ?>
 
     <?php
     $sql = "SELECT Razred, Ime, Prezime FROM ucenici WHERE Id='" . $_GET['Bar'] ."'";
@@ -94,6 +76,8 @@
 
         $sql1 = "INSERT IGNORE INTO ispis (Ime, Prezime) SELECT Ime, Prezime FROM ucenici WHERE Id='" . $_GET['Bar'] ."'";
         $result1 = $conn->query($sql1);
+        $sql2 = "INSERT IGNORE INTO eispis (Mjesto) SELECT Id FROM ispis";
+        $result2 = $conn->query($sql2);
         header("Location: ocitavanje.php");
     } else {
         echo "Nema ucenika";
@@ -109,18 +93,7 @@
 
     ?>
 
-
-    <br>
-    <br>
-    <!--
-    <a href="index.php">Početak</a>
-    -->
-
 </p>
     </div>
 
-</div><!-- /.container
-
-
-</body>
-</html>
+</div>

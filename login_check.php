@@ -75,22 +75,4 @@
 
     </div>
 
-</div><!-- /.container
-
-
-
-
-
-<html>
-<head>
-    <title>Kros</title>
-</head>
-
-<body>
-<h1>
-    Kros
-</h1>
-
-
-</body>
-</html>
+</div>

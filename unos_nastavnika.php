@@ -4,9 +4,6 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <!--
-    <link rel="stylesheet" type="text/css" href="forma.css">
-    -->
     <title>Kros</title>
 </head>
 
@@ -22,13 +19,7 @@
 <p>
 
 <form method="GET" action="unos_nastavnika1.php">
-    <!--
-    Bar Kod:<br>
 
-    <input name="Id_Bar" onmouseover="this.focus();" type="text">
-
-    <input type="text" name="Id_Bar">
--->
     Ime:
     <input type="text" name="ime"><br><br>
     Prezime:
@@ -39,13 +30,6 @@
     <input type="text" name="password"><br>
 
     <br><input type="submit" value="Submit">
-
-    <!--
-    <input type="radio" name="spol" value="M">Muško<br>
-    <input type="radio" name="spol" value="Ž">Žensko<br>
-    -->
-
-
 </form>
 </p>
 

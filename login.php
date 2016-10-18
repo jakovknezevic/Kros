@@ -26,9 +26,8 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="index.php">Početna</a>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="login.php">Prijava</a></li>
+                <li class="active1"><a href="login.php">Prijava</a></li>
             </ul>
         </div>
     </div>
@@ -45,7 +44,7 @@
         <p>
         <form style="text-align:center" action="login_check.php" class="font" method="post">
             Korisnicko ime:<br>
-            <input type="text" class="textbox hovershadow" autocomplete="off" name="username"><br>
+            <input type="text" class="textbox hovershadow" autocomplete="on" name="username"><br>
             Lozinka:<br>
             <input type="password" class="textbox hovershadow" name="password"><br><br>
             <input type="submit" class="login hovershadow" value="Prijava">
@@ -58,4 +57,4 @@
 
     </div>
 
-</div><!-- /.container
+</div>

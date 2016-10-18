@@ -40,7 +40,7 @@
 <div class="container">
 
     <div class="starter-template">
-        <h1>Poredak</h1>
+        <h1>Ekipni poredak</h1>
         <p class="lead"></p>
     </div>
 
@@ -49,21 +49,19 @@
 
 
         <p>
-            
+
 
 
             <?php
-            $sql = "SELECT Id, Ime, Prezime FROM ispis";
+            $sql = "SELECT Id, Ime, Prezime FROM ispis LIMIT 3";
             $result = $conn->query($sql);
-            //echo($_GET['Bar'] . "????? ");
             if ($result->num_rows > 0) {
-                // output data of each row
                 echo('<table>');
 
                 echo('<tr>');
-                echo('<th>' . 'Mjesto' . '</th>');
-                echo('<th>' . 'Ime' . '</th>');
-                echo('<th>' . 'Prezime' . '</th>');
+                echo('<th>' . 'Skola1' . '</th>');
+                echo('<th>' . 'Skola2' . '</th>');
+                echo('<th>' . 'Skola3' . '</th>');
                 echo('</tr>');
 
                 while($row = $result->fetch_assoc()) {
@@ -71,14 +69,14 @@
 
                     echo('<tr>');
                     echo('<td>' . $row['Id'] . '</td>');
-                    echo('<td>' . $row['Ime'] . '</td>');
-                    echo('<td>' . $row['Prezime'] . '</td>');
+                    echo('<td>' . $row['Id'] . '</td>');
+                    echo('<td>' . $row['Id'] . '</td>');
                     echo('</tr>');
                 }
                 echo('</table>');
 
             } else {
-                echo "Nema ucenika";
+                echo "Nema podataka";
             }
             $conn->close();
             ?>

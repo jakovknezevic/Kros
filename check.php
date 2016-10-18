@@ -1,19 +1,3 @@
-<!--
-<!DOCTYPE html>
-<html>
-<body>
-
-<p>
-
-<form action="login.php">
-    <input type="submit" value="Login"><br><br>
-</form>
-
-</p>
-</body>
-
-</html>
--->
 <?PHP
 
 
@@ -28,21 +12,3 @@ if (!(isset($_SESSION['login']) && $_SESSION['login'] != '')) {
 }
 
 ?>
-
-
-
-
-<?php
-//session_start();
-//if(!isset($_SESSION['id']))
-//{
-//    echo('Niste prijavljeni!');
-//    die();
-//}
-//
-//else{
-//
-//}
-//?>
-
-

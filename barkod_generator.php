@@ -54,14 +54,12 @@
 
 $sql = "SELECT Id, Ime, Prezime FROM ucenici WHERE Ime='" . $_GET['Ime'] ."' AND Prezime='". $_GET['Prezime'] ."'";
 $result = $conn->query($sql);
-//$ime = mysqli_real_escape_string($_POST['email']);
-//echo($sql);
+
 
 if ($result->num_rows > 0) {
-    // output data of each row
-    //echo('<table>');
 
-    while($row = $result->fetch_assoc()) {
+    while($row = $result->fetch_assoc())
+    {
 
         echo('<tr>');
         echo('<td>' . $row['Id'] . ' ' . '</td>');
@@ -70,29 +68,13 @@ if ($result->num_rows > 0) {
         generate_barcode($row['Id']);
         echo('</tr>');
 
-/*
-        echo('<tr>');
-        echo($row['Id']);
-        echo($row['Ime']);
-        echo($row['Prezime']);
-        generate_barcode($row['Id']);
-        echo('</tr>');
-*/
+
     }
-    //echo('</table>');
 } else {
     echo "Učenik ne postoji u bazi, provjerite jeste li ispravno unijeli podatke!<br>";
     echo "Kliknite na strelicu gore da biste otišli korak nazad.";
 }
 $conn->close();
-
-
-
-//$query = "SELECT * from tickets WHERE email = '$ime'";
-//$name = $row['name'];
-
-//$seatnumber = $row['seatnumber'];
-
 ?>
 
         <body>
@@ -113,4 +95,4 @@ $conn->close();
 
     </div>
 
-</div><!-- /.container
+</div>

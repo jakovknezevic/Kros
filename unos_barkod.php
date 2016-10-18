@@ -56,12 +56,6 @@
 
             <br><input type="submit" class="login hovershadow" value="Submit">
 
-            <!--
-            <input type="radio" name="spol" value="M">Muško<br>
-            <input type="radio" name="spol" value="Ž">Žensko<br>
-            -->
-
-
         </form>
         </p>
         

@@ -50,16 +50,6 @@
         
         <form method="GET" action="ocitavanje1.php">
             <input type="text" class="hovershadow ocitavanje" autocomplete="off" onmouseover="this.focus();" name="Bar">
-            <!--
-            <input type="number" name="Id_Bar" min="1" max="10">
-            -->
-
-
-            <!--
-            <input type="radio" name="spol" value="M">Muško<br>
-            <input type="radio" name="spol" value="Ž">Žensko<br>
-            -->
-
         </form>
         </p>
 
@@ -67,7 +57,14 @@
 
         <p>
         <form action="ispis.php">
-            <input type="submit" class="button button1" value="Ispis"><br><br>
+            <input type="submit" class="button button1" value="Poredak"><br><br>
+        </form>
+
+        </p>
+
+        <p>
+        <form action="eispis.php">
+            <input type="submit" class="button button1" value="Ekipni poredak"><br><br>
         </form>
 
         </p>
@@ -76,30 +73,4 @@
 
     </div>
 
-</div><!-- /.container
-
-
-
-<html>
-<head>
-    <meta charset="UTF-8">
-    <!--
-    <link rel="stylesheet" type="text/css" href="forma.css">
-    -->
-
-</head>
-
-<body>
-
-
-
-
-
-
-
-<!--
-<a href="index.php">Početak</a>
--->
-
-</body>
-</html>
+</div>

@@ -7,19 +7,5 @@
 
     $conn->query($sql);
 
-    /*
-     
-    
-    if($result)
-    {
-        echo "Success executing : $sql";
-    }
-    else
-    {
-        echo "Failed executing : $sql";
-    }
-
-    */
-
     header("Location: unos_kat.php");
     ?>
