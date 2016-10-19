@@ -32,6 +32,12 @@ body {
 }
 
 
+.slow {
+    /* Slow change to different color on hover */
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
 
 .print-button {
     position:absolute;
@@ -187,4 +193,16 @@ th {
 }
 
 
+/*--------------------------------------------------------------------------------------------------------------------
+  Logo */
 
+#logo {
+    border: 1px solid black;
+    padding: 0.5em;
+    float: right;
+    background-color: navajowhite;
+}
+
+#razmak {
+    padding-right: 1em;
+}

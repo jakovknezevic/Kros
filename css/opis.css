@@ -1,0 +1,216 @@
+body {
+  margin: 0 auto;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+
+.linklijeva {
+	padding-right: 1em;
+}
+
+.linkdesna {
+	padding-left: 1em;
+}
+
+#sadrzaj p {
+	color: gray;
+}
+
+#slika{
+	float: center;
+	margin: 1em 1em 1em 1em;
+	width: 100%;
+	height: 100%; 
+	text-align: justify;
+}
+
+#list{
+	text-align: center;
+	
+}
+
+#border{
+	min-height: 900px;
+	max-width: auto;
+	background-color: rgb(63, 82, 91);
+	overflow: hidden;
+	padding-left: 1em;
+	padding-right: 1em;
+	
+	
+}
+
+#border2{
+	height: 60px;
+	background-color: rgb(48, 47, 57);
+	overflow: hidden;
+	padding: 5px;
+}
+
+#border3{
+	height: 100px;
+	overflow: hidden;
+	border-bottom: 1px solid #9e9e9e;
+	padding-left: 1em;
+	padding-right: 1em;
+	text-align: center;
+}
+
+
+#border4{
+	margin-left: 25em;
+	min-height: 600px;
+	overflow: hidden;
+	padding-left: 1em;
+	padding-right: 1em;
+	text-align: center;
+}
+
+#buttons li {
+	padding: 2px;
+    float: left;
+    list-style: none;
+	font-family: android;
+    text-align: center;
+    background-color: rgb(48, 47, 57);
+    margin-right: 5px;
+    width: 150px;
+    line-height: 60px;
+}
+
+#buttons li a{
+    text-decoration: none;
+	font-family: android;
+    color: #FEFEFE;
+    display: block;
+}
+ 
+#buttons li a:hover {
+    text-decoration: none;
+	font-family: android;
+    color: #FEFEFE;
+    background-color: rgb(55, 55, 65);
+}
+
+#main {
+    width:990px;
+    height:100%;
+    margin:0 auto;
+    text-align:center;
+}
+#main ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+#main li{
+    display:inline-block;
+    /*width:100%;*/
+    margin:0 3px;
+}
+
+#android{
+	margin-left:30em;
+	float: left;	
+}
+
+div.sadrzaj {	
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+	color: inital;
+    display: block;
+	width: 30em;
+	float: center;
+}
+
+div.sadrzaj p {
+	color: white;
+	text-align: justify;
+}
+
+div.sadrzaj h1 {
+	font-family: android;
+	color: white;
+}
+
+div.img {
+	margin-left: 35em;
+    margin: 5px;
+    width: 200px;
+}
+
+div.img img {
+	margin-left: 5em;
+	margin-right: auto;
+    width: 200px;
+    height: 200px;
+}
+
+div.desc {
+	color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#kontakti{
+	float: right;
+	margin-right; 30em;
+}
+
+div.kontakti {
+	margin-left: 1px;
+	margin-right: 1px;
+    margin: 5px;
+	float:left;
+    width: 100px;
+}
+
+div.kontakti img {
+    width: 35px;
+    height: 35px;
+}
+
+#kartica{
+	margin-left: 11em;
+	margin-right: auto;
+}
+
+div.kartice {
+	margin-left: auto;
+	margin-right: auto;
+    margin: 5px;
+	float:left;
+    width: 350px;
+}
+
+div.kartice:hover {
+    border: 1px solid #777;
+}
+
+div.kartice img {
+    width: 100%;
+    height: 400px;
+}
+
+#slike {
+	margin-left: 47em;
+	margin-right: auto;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+@font-face {
+    font-family: android;
+    src: url(Android.ttf);
+}
+
+
+#crno {
+	color: initial;
+	text-align: justify; 
+}

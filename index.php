@@ -13,7 +13,7 @@
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/template.css" rel="stylesheet">
-    <![endif]-->
+
 </head>
 
 
@@ -59,6 +59,8 @@
             <input type="submit" class="button hovershadow" value="Očitavanje barkod skenerom"><br><br>
         </form>
 
+        <!--
+
         <form style="text-align:center" action="unos_kat.php">
             <input type="submit" class="button hovershadow" value="Unos kategorija"><br><br>
         </form>
@@ -71,6 +73,8 @@
             <input type="submit" class="button hovershadow" value="Unos Nastavnika"><br><br>
         </form>
 
+        -->
+
         <form style="text-align:center" action="unos_barkod.php">
             <input type="submit" class="button hovershadow" value="Barkod generator"><br><br>
         </form>
@@ -79,6 +83,13 @@
 
 
         </p>
+    </div>
+
+    <div id="logo">
+
+        <img id="razmak" src="img/logo.jpg" alt="Kros logo">
+        <img src="img/logo_skole.png" alt="Logo škole">
+
     </div>
 
 </div>
