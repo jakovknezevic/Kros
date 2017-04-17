@@ -11,10 +11,10 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
+    
     <link href="css/template.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <![endif]-->
+    
 </head>
 
 <body>
@@ -47,6 +47,42 @@
 
     <div>
         <p>
+		
+		<?php
+			
+			$sql = "SELECT naziv FROM skola";
+            $result = $conn->query($sql);
+            while($row = mysqli_fetch_array($result)){
+				echo "\nNaziv: ";
+                echo $row['naziv'];
+				
+			
+            }
+		
+		
+		?>
+		
+		<select id="org_name" name="org_name" onchange="configureDropDownLists(this,'submitter_name')">
+        <option value="empty"><?php $row['naziv'] ?></option>
+		<?php
+			
+			$sql = "SELECT naziv FROM skola";
+            $result = $conn->query($sql);
+            while($row = mysqli_fetch_array($result)){
+                echo "Nazivi škola='" . $row['naziv'] . "'";
+			
+            }
+		
+		
+		?>
+		
+		</select>
+		<label for="submitter_name">Request Submitted By:</label>
+		<select id="submitter_name" name="submitter_name">
+			<option value="Prva">Tehnička škola Daruvar</option>
+			<option value="Druga">Ekonomska i Turistička škola Daruvar</option>
+			<option value="Treća">Gimnazija Daruvar</option>
+		</select>
 
 
 
@@ -93,4 +129,7 @@
 
 </div>
 
+<script src="js/js1.js"></script>
+
+</html>
 

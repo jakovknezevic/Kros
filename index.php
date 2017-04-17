@@ -41,6 +41,11 @@
 
     <div class="starter-template">
         <h1>Početna</h1>
+		 <h2> <?php
+				
+				
+				// echo "SID: ".SID."<br>session_id(): ".session_id()."<br>COOKIE: ".$_COOKIE["PHPSESSID"];
+		// ?></h2>
         <p class="lead"></p>
     </div>
 

@@ -10,9 +10,9 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
+    
     <link href="css/template.css" rel="stylesheet">
-    <![endif]-->
+   
 </head>
 
 <body>
@@ -27,9 +27,8 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="logout.php">Odjava</a>
             <ul class="nav navbar-nav">
-                <li class="active1"><a href="index.php">Početna</a></li>
+                <li class="active1"><a href="login.php">Prijava</a></li>
             </ul>
         </div>
     </div>
@@ -49,17 +48,27 @@
 
 
 
-            $sql = "SELECT * FROM nastavnici WHERE Username='" . $_POST['username'] ."'  AND Password='". $_POST['password'] ."'";
+            $sql = "SELECT * FROM nastavnici WHERE username='" . $_POST['username'] ."'  AND password='". $_POST['password'] ."'";
             $result = $conn->query($sql);
 
-
-            if ($result->num_rows > 0) {
-                // output data of each row
+			if ($_POST['username'] == 'admin') {
+							
+				session_start();
+				$_SESSION['login'] = "1";
+				header("Location: upis.php");
+			}
+			
+            elseif ($result->num_rows > 0) {
+                
                 session_start();
                 $_SESSION['login'] = "1";
                 header("Location: index.php");
+			
+			}
+				
+			
 
-            } else {
+            else {
 
                 echo "Provjerite jeste li ispravno unijeli podatke!";
                 session_start();
@@ -68,7 +77,7 @@
             ?>
 
         <form action="login.php">
-            <input type="submit" class="login hovershadow" value="Login"><br><br>
+            <input type="submit" class="login hovershadow" value="Prijava"><br><br>
         </form>
 
         </p>

@@ -11,7 +11,7 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
+    
     <link href="css/template.css" rel="stylesheet">
 
 </head>
