@@ -13,7 +13,8 @@
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/template.css" rel="stylesheet">
-    <![endif]-->
+    <link href="css/style1.css" rel="stylesheet">
+	
 </head>
 
 <body>
@@ -41,7 +42,7 @@
 <div class="container">
 
     <div class="starter-template">
-        <h1>Unos učenika</h1>
+        
         <p class="lead"></p>
     </div>
 
@@ -54,7 +55,7 @@
             Prezime:
             <input type="text" class="textbox hovershadow" autocomplete="off" name="Prezime"><br>
 
-            <br><input type="submit" class="login hovershadow" value="Submit">
+            <br><input type="submit" class="login hovershadow" value="Unos">
 
         </form>
         </p>

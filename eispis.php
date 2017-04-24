@@ -13,6 +13,7 @@
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/template.css" rel="stylesheet">
+	<link href="css/style1.css" rel="stylesheet">
 
 </head>
 

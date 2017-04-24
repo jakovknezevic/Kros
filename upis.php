@@ -14,6 +14,7 @@
     
     <link href="css/template.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+	<link href="css/style1.css" rel="stylesheet">
     
 </head>
 
@@ -47,6 +48,8 @@
 
     <div>
         <p>
+		
+		<!--
 		
 		<?php
 			
@@ -83,6 +86,8 @@
 			<option value="Druga">Ekonomska i Turistička škola Daruvar</option>
 			<option value="Treća">Gimnazija Daruvar</option>
 		</select>
+		
+		-->
 
 
 
@@ -103,7 +108,7 @@
 
             <br><br><br>
 
-            <br><input type="submit" class="login hovershadow center1" value="Submit"><br><br>
+            <br><input type="submit" class="login hovershadow center1" value="Unos"><br><br>
             
             <strong>Druga Forma</strong><br><br>
 

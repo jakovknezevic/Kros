@@ -13,6 +13,7 @@
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/template.css" rel="stylesheet">
+	<link href="css/style1.css" rel="stylesheet">
 
 </head>
 
@@ -40,7 +41,7 @@
 <div class="container">
 
     <div class="starter-template">
-        <h1>Početna</h1>
+        
 		 <h2> <?php
 				
 				
@@ -63,22 +64,6 @@
         <form style="text-align:center" action="ocitavanje.php">
             <input type="submit" class="button hovershadow" value="Očitavanje barkod skenerom"><br><br>
         </form>
-
-        <!--
-
-        <form style="text-align:center" action="unos_kat.php">
-            <input type="submit" class="button hovershadow" value="Unos kategorija"><br><br>
-        </form>
-
-        <form style="text-align:center" action="unos_skola.php">
-            <input type="submit" class="button hovershadow" value="Unos Škole"><br><br>
-        </form>
-
-        <form style="text-align:center" action="unos_nastavnika.php">
-            <input type="submit" class="button hovershadow" value="Unos Nastavnika"><br><br>
-        </form>
-
-        -->
 
         <form style="text-align:center" action="unos_barkod.php">
             <input type="submit" class="button hovershadow" value="Barkod generator"><br><br>
