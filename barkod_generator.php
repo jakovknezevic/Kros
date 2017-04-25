@@ -33,7 +33,7 @@
             </button>
 
             <a class="navbar-brand" href="logout.php">Odjava</a>
-            <a class="navbar-brand" href="index.php">Početna</a>
+            <a class="navbar-brand" href="index.php">PoÃÂetna</a>
             <ul class="nav navbar-nav">
                 <li class="active1"><a href="unos_barkod.php">Barkod Generator</a></li>
             </ul>
@@ -53,7 +53,10 @@
 
 <?php
 
-$sql = "SELECT Id, Ime, Prezime FROM ucenici WHERE Ime='" . $_GET['Ime'] ."' AND Prezime='". $_GET['Prezime'] ."'";
+//$sql = "SELECT Id_ucenici, Ime, Prezime FROM ucenici WHERE Ime='" . $_GET['Ime'] ."' AND Prezime='". $_GET['Prezime'] ."'";
+
+$sql = "SELECT ucenici.ID_ucenici as 'Id', ucenici.Ime as 'Ime', ucenici.Prezime as 'Prezime', skola.naziv as 'naziv' FROM (SELECT skola.naziv as 'naziv' from skola limit 1)as sas, ucenici JOIN skola ON ucenici.Skole_ID=skola.ID_skola WHERE ucenici.Ime='" . $_GET['Ime'] ."' AND ucenici.Prezime='". $_GET['Prezime'] ."'";
+//$result = $conn->query($sql2);
 $result = $conn->query($sql);
 
 
@@ -63,17 +66,21 @@ if ($result->num_rows > 0) {
     {
 
         echo('<tr>');
-        echo('<td>' . $row['Id'] . ' ' . '</td>');
-        echo('<td>' . $row['Ime'] . ' ' . '</td>');
-        echo('<td>' . $row['Prezime'] . '</td>');
-        generate_barcode($row['Id']);
-        echo('</tr>');
-
+	echo('<td>' . '</td>');
+	echo('<td>' . '</td>');
+	echo('<td>' . $row['Id'] . ' ' . '</td>');
+	echo('<td>' . $row['Ime'] . ' ' . '</td>');
+	echo('<td>' . $row['Prezime'] . '</td>');
+	echo('<td>' . '</td>');
+	generate_barcode($row['Id']);
+	echo('<td>' . $row['naziv'] . '</td>');
+	echo('');
+	echo('</tr>');
 
     }
 } else {
-    echo "Učenik ne postoji u bazi, provjerite jeste li ispravno unijeli podatke!<br>";
-    echo "Kliknite na strelicu gore da biste otišli korak nazad.";
+    echo "UÃÂenik ne postoji u bazi, provjerite jeste li ispravno unijeli podatke!<br>";
+    echo "Kliknite na strelicu gore da biste otiÃÂ¡li korak nazad.";
 }
 $conn->close();
 ?>

@@ -36,7 +36,7 @@
 <div class="container">
 
     <div class="starter-template">
-        <h1>Greška</h1>
+        <h1>GreÅ¡ka</h1>
         <p class="lead"></p>
     </div>
 
@@ -54,7 +54,7 @@
 							
 				session_start();
 				$_SESSION['login'] = "1";
-				header("Location: upis.php");
+				header("Location: index.php");
 			}
 			
             elseif ($result->num_rows > 0) {

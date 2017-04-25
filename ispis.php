@@ -28,7 +28,7 @@
             </button>
 
             <a class="navbar-brand" href="logout.php">Odjava</a>
-            <a class="navbar-brand" href="index.php">Početna</a>
+            <a class="navbar-brand" href="index.php">PoÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂetna</a>
             <ul class="nav navbar-nav">
                 <li class="active1"><a href="ispis.php">Lista</a></li>
             </ul>
@@ -52,7 +52,7 @@
 
 
             <?php
-            $sql = "SELECT Id, Ime, Prezime FROM ispis";
+            $sql = "SELECT ID_ispis, Ime, Prezime FROM ispis";
             $result = $conn->query($sql);
             //echo($_GET['Bar'] . "????? ");
             if ($result->num_rows > 0) {
@@ -69,7 +69,7 @@
 
 
                     echo('<tr>');
-                    echo('<td>' . $row['Id'] . '</td>');
+                    echo('<td>' . $row['ID_ispis'] . '</td>');
                     echo('<td>' . $row['Ime'] . '</td>');
                     echo('<td>' . $row['Prezime'] . '</td>');
                     echo('</tr>');
@@ -77,7 +77,7 @@
                 echo('</table>');
 
             } else {
-                echo "Nema ucenika";
+                echo "Nema natjecatelja u tablici";
             }
             $conn->close();
             ?>

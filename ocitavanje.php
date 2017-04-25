@@ -62,6 +62,8 @@
         </form>
 
         </p>
+		
+		<!--
 
         <p>
         <form action="eispis.php">
@@ -71,6 +73,7 @@
         </p>
 
 
+		-->
 
     </div>
 

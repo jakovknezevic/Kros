@@ -31,18 +31,20 @@
             </button>
 
             <a class="navbar-brand" href="logout.php">Odjava</a>
-            <a class="navbar-brand" href="index.php">Početna</a>
+            <a class="navbar-brand" href="index.php">PoÃÂÃÂetna</a>
             <ul class="nav navbar-nav">
-                <li class="active1"><a href="upis.php">Unos učenika</a></li>
+                <li class="active1"><a href="upis.php">Unos uÃÂÃÂenika</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
+
+
 <div class="container">
 
     <div class="starter-template">
-        <h1>Unos učenika</h1>
+        <h1>Unos uÃÂÃÂenika</h1>
         <p class="lead"></p>
     </div>
 
@@ -72,7 +74,7 @@
 			$sql = "SELECT naziv FROM skola";
             $result = $conn->query($sql);
             while($row = mysqli_fetch_array($result)){
-                echo "Nazivi škola='" . $row['naziv'] . "'";
+                echo "Nazivi ÃÂÃÂ¡kola='" . $row['naziv'] . "'";
 			
             }
 		
@@ -82,9 +84,9 @@
 		</select>
 		<label for="submitter_name">Request Submitted By:</label>
 		<select id="submitter_name" name="submitter_name">
-			<option value="Prva">Tehnička škola Daruvar</option>
-			<option value="Druga">Ekonomska i Turistička škola Daruvar</option>
-			<option value="Treća">Gimnazija Daruvar</option>
+			<option value="Prva">TehniÃÂÃÂka ÃÂÃÂ¡kola Daruvar</option>
+			<option value="Druga">Ekonomska i TuristiÃÂÃÂka ÃÂÃÂ¡kola Daruvar</option>
+			<option value="TreÃÂÃÂa">Gimnazija Daruvar</option>
 		</select>
 		
 		-->
@@ -93,7 +95,7 @@
 
         <form method="GET" class="font spacing center" action="upis1.php">
 
-            <strong>Prva Forma</strong><br><br>
+            <br><br>
 
             Kategorija:
             <input type="number" class="textbox hovershadow" autocomplete="off" name="KatId"><br><br>
@@ -110,6 +112,7 @@
 
             <br><input type="submit" class="login hovershadow center1" value="Unos"><br><br>
             
+			<!--
             <strong>Druga Forma</strong><br><br>
 
 
@@ -124,7 +127,7 @@
             Prezime:
             <input type="text" class="textbox hovershadow" autocomplete="off" name="Prezime1"><br>
 
-
+			-->
 
         </form>
         
@@ -137,4 +140,3 @@
 <script src="js/js1.js"></script>
 
 </html>
-

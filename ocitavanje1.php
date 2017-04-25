@@ -30,9 +30,9 @@
             </button>
 
             <a class="navbar-brand" href="logout.php">Odjava</a>
-            <a class="navbar-brand" href="index.php">Početna</a>
+            <a class="navbar-brand" href="index.php">PoÃÂetna</a>
             <ul class="nav navbar-nav">
-                <li class="active1"><a href="ocitavanje.php">Očitavanje</a></li>
+                <li class="active1"><a href="ocitavanje.php">OÃÂitavanje</a></li>
             </ul>
         </div>
     </div>
@@ -52,9 +52,9 @@
 <p>
 
     <?php
-    $sql = "SELECT Razred, Ime, Prezime FROM ucenici WHERE Id='" . $_GET['Bar'] ."'";
+    $sql = "SELECT Razred, Ime, Prezime FROM ucenici WHERE Id_ucenici='" . $_GET['Bar'] ."'";
     $result = $conn->query($sql);
-    //echo($_GET['Bar'] . "????? ");
+    echo($_GET['Bar'] . "????? ");
     if ($result->num_rows > 0) {
         // output data of each row
         echo('<table>');
@@ -75,7 +75,7 @@
         }
         echo('</table>');
 
-        $sql1 = "INSERT IGNORE INTO ispis (Ime, Prezime) SELECT Ime, Prezime FROM ucenici WHERE Id='" . $_GET['Bar'] ."'";
+        $sql1 = "INSERT IGNORE INTO ispis (Ime, Prezime) SELECT Ime, Prezime FROM ucenici WHERE Id_ucenici='" . $_GET['Bar'] ."'";
         $result1 = $conn->query($sql1);
         $sql2 = "INSERT IGNORE INTO eispis (Mjesto) SELECT Id FROM ispis";
         $result2 = $conn->query($sql2);
