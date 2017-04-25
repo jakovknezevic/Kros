@@ -1,0 +1,50 @@
+/* --------------------------------------------------------------------------------------------------------------------
+    Multiple insert of students css  */
+
+
+
+.form1 {
+    margin-left: 5em;
+    margin-top: -20em;
+}
+
+.form2 {
+    margin-left: 15em;
+    margin-top: -20em;
+}
+
+.spacing {
+    line-height: 1.5;
+}
+
+
+.aligning {
+    width: 25em;
+}
+
+.center {
+    text-align: center;
+}
+
+.center1 {
+    float: right;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------
+    Multiple insert of students css  */
+
+
+img{
+    width:300%;
+    height: auto;
+}
+
+
+.border1 {
+    border:1px solid black;
+    max-width: 11em;
+    padding:1.5em;
+}
+
+
