@@ -63,13 +63,14 @@
 
         </p>
 
+		<!--
         <p>
         <form action="eispis.php">
             <input type="submit" class="button button1" value="Ekipni poredak"><br><br>
         </form>
 
         </p>
-
+		-->
 
 
     </div>
